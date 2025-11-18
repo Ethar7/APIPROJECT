@@ -1,6 +1,0 @@
-@Ecommerence.web_HostAddress = http://localhost:5291
-
-GET {{Ecommerence.web_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
