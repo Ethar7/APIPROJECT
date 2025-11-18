@@ -1,0 +1,16 @@
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/bin/Debug/net9.0/ApplicationServiceAppstraction.deps.json
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/bin/Debug/net9.0/ApplicationServiceAppstraction.dll
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/bin/Debug/net9.0/ApplicationServiceAppstraction.pdb
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.GeneratedMSBuildEditorConfig.editorconfig
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.AssemblyInfoInputs.cache
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.AssemblyInfo.cs
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.csproj.CoreCompileInputs.cache
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.sourcelink.json
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.dll
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/refint/ApplicationServiceAppstraction.dll
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.pdb
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ref/ApplicationServiceAppstraction.dll
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/bin/Debug/net9.0/Ecommerence.Shared.dll
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/bin/Debug/net9.0/Ecommerence.Shared.pdb
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/ApplicationServiceAppstraction.csproj.AssemblyReference.cache
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/Debug/net9.0/Applicat.EBC7F985.Up2Date
