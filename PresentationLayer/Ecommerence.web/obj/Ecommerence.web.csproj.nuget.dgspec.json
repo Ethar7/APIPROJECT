@@ -1,0 +1,491 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/Ecommerence.web.csproj": {}
+  },
+  "projects": {
+    "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
+        "projectName": "ECommerence.Domain",
+        "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj",
+        "projectName": "Ecommerence.Service",
+        "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj"
+              },
+              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj",
+        "projectName": "ApplicationServiceAppstraction",
+        "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj",
+        "projectName": "Ecommerence.Shared",
+        "projectPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj",
+        "projectName": "Ecommerence.Persistence",
+        "projectPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj",
+        "projectName": "Ecommerence.Presentation",
+        "projectPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj"
+              },
+              "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/Ecommerence.web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/Ecommerence.web.csproj",
+        "projectName": "Ecommerence.web",
+        "projectPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/Ecommerence.web.csproj",
+        "packagesPath": "/home/ethar/.nuget/packages/",
+        "outputPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ethar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj"
+              },
+              "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj": {
+                "projectPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

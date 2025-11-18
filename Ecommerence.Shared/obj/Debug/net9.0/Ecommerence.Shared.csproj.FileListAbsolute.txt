@@ -1,0 +1,12 @@
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/bin/Debug/net9.0/Ecommerence.Shared.deps.json
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/bin/Debug/net9.0/Ecommerence.Shared.dll
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/bin/Debug/net9.0/Ecommerence.Shared.pdb
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.AssemblyInfoInputs.cache
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.AssemblyInfo.cs
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.csproj.CoreCompileInputs.cache
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.sourcelink.json
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.dll
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/refint/Ecommerence.Shared.dll
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/Ecommerence.Shared.pdb
+/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/Debug/net9.0/ref/Ecommerence.Shared.dll
