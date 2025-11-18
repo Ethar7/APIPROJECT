@@ -98,10 +98,9 @@ using Ecommerence.Persistence.Data.DbContexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// إضافة الـ Controllers
 builder.Services.AddControllers();
 
-// إضافة Swagger
+
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<StoreDbContext>(options =>
@@ -115,17 +114,16 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// تفعيل Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// تفعيل الـ Controllers
+
 app.MapControllers();
 
-// Minimal API endpoint
+
 app.MapGet("/", () => "Hello World!");
 
 // WeatherForecast endpoint
