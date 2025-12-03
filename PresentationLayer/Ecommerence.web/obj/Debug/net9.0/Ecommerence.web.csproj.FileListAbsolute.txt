@@ -204,3 +204,11 @@
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/AutoMapper.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.AspNetCore.Razor.Language.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.CodeAnalysis.Razor.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Newtonsoft.Json.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll

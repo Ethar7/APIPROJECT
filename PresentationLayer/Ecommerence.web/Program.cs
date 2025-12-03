@@ -91,15 +91,96 @@
 //     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 // }
 
+// using Microsoft.OpenApi.Models;
+// using Microsoft.EntityFrameworkCore;
+// using Ecommerence.Persistence.Data.DbContexts;
+// using Microsoft.Extensions.DependencyInjection;
+// using ECommerence.Domain.Contracts;
+// using Ecommerence.Persistence.Data.DataSeed;
+// using Ecommerence.web.Extensions;
+
+
+// var builder = WebApplication.CreateBuilder(args);
+
+// builder.Services.AddControllers();
+
+
+// builder.Services.AddEndpointsApiExplorer();
+
+// builder.Services.AddDbContext<StoreDbContext>(options =>
+// {
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+// });
+// builder.Services.AddSwaggerGen(c =>
+// {
+//     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+// });
+
+// builder.Services.AddScoped<IDataInitializer, DataInitializer>();
+
+// var app = builder.Build();
+
+// #region DataSeed
+
+// app.MigrateDb();
+// app.SeedDb();
+// #endregion
+
+// if (app.Environment.IsDevelopment())
+// {
+//     app.UseSwagger();
+//     app.UseSwaggerUI();
+// }
+
+
+// app.MapControllers();
+
+
+// app.MapGet("/", () => "Hello World!");
+
+// // WeatherForecast endpoint
+// var summaries = new[]
+// {
+//     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm",
+//     "Balmy", "Hot", "Sweltering", "Scorching"
+// };
+
+// app.MapGet("/weatherforecast", () =>
+// {
+//     var forecast = Enumerable.Range(1, 5).Select(index =>
+//         new WeatherForecast(
+//             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+//             Random.Shared.Next(-20, 55),
+//             summaries[Random.Shared.Next(summaries.Length)]
+//         )).ToArray();
+//     return forecast;
+// });
+
+// app.Run();
+
+// // WeatherForecast record
+// record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+// {
+//     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+// }
+
+
+
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Ecommerence.Persistence.Data.DbContexts;
-
+using Microsoft.Extensions.DependencyInjection;
+using ECommerence.Domain.Contracts;
+using Ecommerence.Persistence.Data.DataSeed;
+using Ecommerence.web.Extensions;
+using Ecommerence.Service.MappingProfiles;
+using Ecommerence.Persistence.Repositories;
+using Ecommerence.ServiceAppstraction;
+using Ecommerence.Service;
 
 var builder = WebApplication.CreateBuilder(args);
-
+// Add services
 builder.Services.AddControllers();
-
 
 builder.Services.AddEndpointsApiExplorer();
 
@@ -107,12 +188,23 @@ builder.Services.AddDbContext<StoreDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 });
 
+builder.Services.AddScoped<IDataInitializer, DataInitializer>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddAutoMapper(X => X.AddProfile<ProductProfile>());
+builder.Services.AddScoped<IProductServices , ProductService>();
+
 var app = builder.Build();
+
+#region Auto Migration + Seeding
+app.MigrateDbAsync();   // Auto apply migrations
+app.SeedDbAsync();      // Seed data
+#endregion
 
 if (app.Environment.IsDevelopment())
 {
@@ -120,13 +212,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Complete MVC pipeline
+app.UseRouting();
+// OPTIONAL if you have it later
+// app.UseAuthentication();
+// app.UseAuthorization();
 
 app.MapControllers();
 
-
+// Test endpoint
 app.MapGet("/", () => "Hello World!");
 
-// WeatherForecast endpoint
+// WeatherForecast
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm",
@@ -146,9 +243,7 @@ app.MapGet("/weatherforecast", () =>
 
 app.Run();
 
-// WeatherForecast record
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
-
