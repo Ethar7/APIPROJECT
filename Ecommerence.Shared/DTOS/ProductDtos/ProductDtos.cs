@@ -11,7 +11,7 @@ namespace Ecommerence.Shared.DTOS.ProductDtos
 
         public decimal Price {get; set;}
 
-        public string ProductPrand {get; set;} = null!;
+        public string ProductBrand {get; set;} = null!;
 
         public string ProductType {get; set;} = null!;
     }

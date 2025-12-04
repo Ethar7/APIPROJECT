@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Data.Migrations
+namespace Ecommerence.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -11,7 +11,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ProductPrands",
+                name: "ProductBrands",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -20,7 +20,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductPrands", x => x.Id);
+                    table.PrimaryKey("PK_ProductBrands", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -53,9 +53,9 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_ProductPrands_BrandId",
+                        name: "FK_Products_ProductBrands_BrandId",
                         column: x => x.BrandId,
-                        principalTable: "ProductPrands",
+                        principalTable: "ProductBrands",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -84,7 +84,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
                 name: "Products");
 
             migrationBuilder.DropTable(
-                name: "ProductPrands");
+                name: "ProductBrands");
 
             migrationBuilder.DropTable(
                 name: "ProductTypes");

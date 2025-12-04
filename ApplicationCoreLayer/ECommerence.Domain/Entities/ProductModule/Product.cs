@@ -13,10 +13,10 @@ namespace ECommerence.Domain.Entities.ProductModule
 
         #region Relationships
             public int BrandId {get; set;}
-            public ProductPrand ProductPrands {get; set;}
+            public ProductBrand ProductBrand {get; set;}
 
             public int TypeId {get; set;}
-            public ProductType ProductTypes {get; set;}
+            public ProductType ProductType {get; set;}
         #endregion
     }
 }

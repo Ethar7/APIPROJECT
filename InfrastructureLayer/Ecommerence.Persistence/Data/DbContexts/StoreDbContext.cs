@@ -50,7 +50,7 @@ namespace Ecommerence.Persistence.Data.DbContexts
 
         // جداول (DbSets)
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductPrand> ProductPrands { get; set; }
+        public DbSet<ProductBrand> ProductBrands { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
     }
 }

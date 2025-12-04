@@ -9,7 +9,7 @@ namespace Ecommerence.ServiceAppstraction
 
         Task<ProductDtos> GetProductByIdAsync(int id);
 
-        Task<IEnumerable<PrandDTO>> GetAllBrandsAsync();
+        Task<IEnumerable<BrandDTO>> GetAllBrandsAsync();
 
         Task<IEnumerable<TypeDTO>> GetAllTypesAsync();
     }

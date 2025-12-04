@@ -1,6 +1,6 @@
 namespace Ecommerence.Shared.DTOS.ProductDtos
 {
-    public class PrandDTO
+    public class BrandDTO
     {
         public int Id {get; set;}
 
