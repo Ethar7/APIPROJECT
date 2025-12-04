@@ -5,7 +5,7 @@ namespace Ecommerence.ServiceAppstraction
 {
     public interface IProductServices
     {
-        Task<IEnumerable<ProductDtos>> GetAllProductAsync();
+        Task<IEnumerable<ProductDtos>> GetAllProductAsync(int? BrandId, int? TypeId);
 
         Task<ProductDtos> GetProductByIdAsync(int id);
 

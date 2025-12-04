@@ -18,9 +18,9 @@ namespace Ecommerence.Presentation.Controllers
 
         #region Get All Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDtos>>> GetAllProduct()
+        public async Task<ActionResult<IEnumerable<ProductDtos>>> GetAllProduct(int? brandId, int? typeId)
         {
-            var Products = await _productServices.GetAllProductAsync();
+            var Products = await _productServices.GetAllProductAsync(brandId, typeId);
             return Ok(Products);
         }
 
