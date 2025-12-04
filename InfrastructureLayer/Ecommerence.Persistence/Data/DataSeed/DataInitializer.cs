@@ -99,7 +99,7 @@ namespace Ecommerence.Persistence.Data.DataSeed
             try
             {
                 
-                var hasBrands = await _dbContext.ProductPrands.AnyAsync();
+                var hasBrands = await _dbContext.ProductBrands.AnyAsync();
                 var hasTypes = await _dbContext.ProductTypes.AnyAsync();
                 var hasProducts = await _dbContext.Products.AnyAsync();
 
@@ -111,7 +111,7 @@ namespace Ecommerence.Persistence.Data.DataSeed
 
                 // Seed بالترتيب (Brands → Types → Products)
                 if (!hasBrands)
-                   await SeedFromJsonAsync<ProductPrand>("brands.json", _dbContext.ProductPrands);
+                   await SeedFromJsonAsync<ProductBrand>("brands.json", _dbContext.ProductBrands);
 
                 if (!hasTypes)
                     await SeedFromJsonAsync<ProductType>("types.json", _dbContext.ProductTypes);

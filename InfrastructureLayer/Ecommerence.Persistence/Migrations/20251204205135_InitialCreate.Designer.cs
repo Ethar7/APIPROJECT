@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Data.Migrations
+namespace Ecommerence.Persistence.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
-    [Migration("20251201090722_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20251204205135_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,7 +66,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ECommerence.Domain.Entities.ProductModule.ProductPrand", b =>
+            modelBuilder.Entity("ECommerence.Domain.Entities.ProductModule.ProductBrand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -81,7 +81,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductPrands");
+                    b.ToTable("ProductBrands");
                 });
 
             modelBuilder.Entity("ECommerence.Domain.Entities.ProductModule.ProductType", b =>
@@ -104,7 +104,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
 
             modelBuilder.Entity("ECommerence.Domain.Entities.ProductModule.Product", b =>
                 {
-                    b.HasOne("ECommerence.Domain.Entities.ProductModule.ProductPrand", "ProductPrands")
+                    b.HasOne("ECommerence.Domain.Entities.ProductModule.ProductBrand", "ProductBrands")
                         .WithMany()
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -116,7 +116,7 @@ namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Da
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ProductPrands");
+                    b.Navigation("ProductBrands");
 
                     b.Navigation("ProductTypes");
                 });

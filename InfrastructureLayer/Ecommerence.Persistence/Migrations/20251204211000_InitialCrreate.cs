@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace Ecommerence.Persistence.InfrastructureLayer.Ecommerence.Persistence.Data.Migrations
+namespace Ecommerence.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate2 : Migration
+    public partial class InitialCrreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
