@@ -18,11 +18,11 @@ namespace Ecommerence.Persistence.Data.Configurations.ProductConfigurations
             builder.Property(X => X.Price)
             .HasPrecision(18, 2);
 
-            builder.HasOne(X => X.ProductPrands)
+            builder.HasOne(X => X.ProductBrand)
             .WithMany()
             .HasForeignKey(X => X.BrandId);
 
-            builder.HasOne(X => X.ProductTypes)
+            builder.HasOne(X => X.ProductType)
             .WithMany()
             .HasForeignKey(X => X.TypeId);
         }

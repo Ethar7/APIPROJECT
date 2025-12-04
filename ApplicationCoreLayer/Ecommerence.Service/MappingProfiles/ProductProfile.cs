@@ -9,11 +9,11 @@ namespace Ecommerence.Service.MappingProfiles
     {
         public ProductProfile()
         {
-            CreateMap<ProductPrand , PrandDTO>();
+            CreateMap<ProductBrand , BrandDTO>();
 
             CreateMap<Product, ProductDtos>()
-            .ForMember(dest => dest.ProductType, opt => opt.MapFrom(src => src.ProductTypes.Name))
-            .ForMember(dest => dest.ProductPrand, opt => opt.MapFrom(src => src.ProductPrands.Name));
+            .ForMember(dest => dest.ProductType, opt => opt.MapFrom(src => src.ProductType.Name))
+            .ForMember(dest => dest.ProductBrand, opt => opt.MapFrom(src => src.ProductBrand.Name));
 
             CreateMap<ProductType , TypeDTO>();
         }
