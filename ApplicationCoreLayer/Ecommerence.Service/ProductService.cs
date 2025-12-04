@@ -8,6 +8,7 @@ using AutoMapper;
 using Ecommerence.Service.Specification;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Ecommerence.Shared;
 
 namespace Ecommerence.Service
 {
@@ -37,9 +38,9 @@ namespace Ecommerence.Service
         }
 
        
-        public async Task<IEnumerable<ProductDtos>> GetAllProductAsync(int? BrandId , int? TypeId)
+        public async Task<IEnumerable<ProductDtos>> GetAllProductAsync(ProductQueryParams queryParams)
         {
-            var spec = new ProductWithBrandAndTypesSpecification(BrandId, TypeId);
+            var spec = new ProductWithBrandAndTypesSpecification(queryParams);
             var products = await _unitOfWork.GetRebository<Product, int>().GetAllAsync(spec);
             return _mapper.Map<IEnumerable<ProductDtos>>(products);
         }
