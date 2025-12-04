@@ -1,11 +1,12 @@
 using System.Net.Http.Headers;
+using Ecommerence.Shared;
 using Ecommerence.Shared.DTOS.ProductDtos;
 
 namespace Ecommerence.ServiceAppstraction
 {
     public interface IProductServices
     {
-        Task<IEnumerable<ProductDtos>> GetAllProductAsync(int? BrandId, int? TypeId);
+        Task<IEnumerable<ProductDtos>> GetAllProductAsync(ProductQueryParams queryParams);
 
         Task<ProductDtos> GetProductByIdAsync(int id);
 

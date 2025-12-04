@@ -1,5 +1,6 @@
 
 using Ecommerence.ServiceAppstraction;
+using Ecommerence.Shared;
 using Ecommerence.Shared.DTOS.ProductDtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,9 +19,9 @@ namespace Ecommerence.Presentation.Controllers
 
         #region Get All Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDtos>>> GetAllProduct(int? brandId, int? typeId)
+        public async Task<ActionResult<IEnumerable<ProductDtos>>> GetAllProduct([FromQuery] ProductQueryParams queryParams)
         {
-            var Products = await _productServices.GetAllProductAsync(brandId, typeId);
+            var Products = await _productServices.GetAllProductAsync(queryParams);
             return Ok(Products);
         }
 
