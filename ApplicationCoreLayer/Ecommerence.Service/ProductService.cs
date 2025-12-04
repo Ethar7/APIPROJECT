@@ -37,9 +37,9 @@ namespace Ecommerence.Service
         }
 
        
-        public async Task<IEnumerable<ProductDtos>> GetAllProductAsync()
+        public async Task<IEnumerable<ProductDtos>> GetAllProductAsync(int? BrandId , int? TypeId)
         {
-            var spec = new ProductWithBrandAndTypesSpecification();
+            var spec = new ProductWithBrandAndTypesSpecification(BrandId, TypeId);
             var products = await _unitOfWork.GetRebository<Product, int>().GetAllAsync(spec);
             return _mapper.Map<IEnumerable<ProductDtos>>(products);
         }
