@@ -6,7 +6,7 @@ namespace Ecommerence.ServiceAppstraction
 {
     public interface IProductServices
     {
-        Task<IEnumerable<ProductDtos>> GetAllProductAsync(ProductQueryParams queryParams);
+        Task<PaginatedResult<ProductDtos>> GetAllProductAsync(ProductQueryParams queryParams);
 
         Task<ProductDtos> GetProductByIdAsync(int id);
 

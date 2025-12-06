@@ -31,18 +31,40 @@ namespace Ecommerence.Service.Specification
         }
         #endregion
         
-         public Expression<Func<TEntity, object>> OrderBy { get; set; }
 
-        public Expression<Func<TEntity, object>> OrderByDescending { get; set; }
+        #region Sorting
+         public Expression<Func<TEntity, object>> OrderBy { get; private set;}
 
-        public void AddOrderBy(Expression<Func<TEntity, object>> orderExp)
+        public Expression<Func<TEntity, object>> OrderByDescending { get; private set;}
+
+
+        protected void AddOrderBy(Expression<Func<TEntity, object>> orderExp)
         {
             OrderBy = orderExp;
         }
 
-        public void AddOrderByDescending(Expression<Func<TEntity, object>> orderExp)
+        protected void AddOrderByDescending(Expression<Func<TEntity, object>> orderExp)
         {
             OrderByDescending = orderExp;
         }
+
+        #endregion
+     
+        #region Pagination
+        public int Skip {get; private set;}
+
+        public int Take {get; private set;}
+
+        public bool IsPaginated {get; set;}
+
+        protected void ApplyPagination(int pageSize , int pageIndex)
+        {
+            IsPaginated = true;
+            Take = pageSize;
+            Skip = (pageIndex - 1) * pageSize;
+        }
+        #endregion
+    
+    
     }
 }

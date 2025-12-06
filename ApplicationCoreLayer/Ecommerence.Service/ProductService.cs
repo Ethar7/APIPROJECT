@@ -38,11 +38,16 @@ namespace Ecommerence.Service
         }
 
        
-        public async Task<IEnumerable<ProductDtos>> GetAllProductAsync(ProductQueryParams queryParams)
+        public async Task<PaginatedResult<ProductDtos>> GetAllProductAsync(ProductQueryParams queryParams)
         {
             var spec = new ProductWithBrandAndTypesSpecification(queryParams);
             var products = await _unitOfWork.GetRebository<Product, int>().GetAllAsync(spec);
-            return _mapper.Map<IEnumerable<ProductDtos>>(products);
+            var DataToReturn = _mapper.Map<IEnumerable<ProductDtos>>(products);
+
+            var CountOfReturnedData = DataToReturn.Count();
+            var CountSpec = new ProductCountSpecification(queryParams);
+            var CountOfProducts = await _unitOfWork.GetRebository<Product, int>().CountAsync(CountSpec);
+            return new PaginatedResult<ProductDtos>(queryParams.pageIndex, CountOfReturnedData, CountOfProducts, DataToReturn);
         }
 
         public async Task<ProductDtos> GetProductByIdAsync(int id)

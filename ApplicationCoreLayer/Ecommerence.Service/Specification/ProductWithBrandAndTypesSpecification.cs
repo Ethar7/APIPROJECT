@@ -33,6 +33,8 @@ namespace Ecommerence.Service.Specification
                         AddOrderBy(P => P.Id);
                         break;
             }
+
+            ApplyPagination(queryParams.PageSize, queryParams.pageIndex);
         }
 
         public ProductWithBrandAndTypesSpecification(int id) : base(P => P.Id == id)
