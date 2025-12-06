@@ -13,6 +13,8 @@ namespace ECommerence.Domain.Contracts
         void Update(TEntity entity);
 
         void Remove(TEntity entity);
+
+        Task<int> CountAsync(ISpecification<TEntity, TKey> specification);
     }
     
 }
