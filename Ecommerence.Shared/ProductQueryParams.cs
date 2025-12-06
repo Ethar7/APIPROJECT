@@ -6,5 +6,7 @@ namespace Ecommerence.Shared
         public int? TypeId { get; set; }
 
         public string? Search { get; set; }
+
+        public ProductSortingObjects? Sort{get; set;}
     }
 }

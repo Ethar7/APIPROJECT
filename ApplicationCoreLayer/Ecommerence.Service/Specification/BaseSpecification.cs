@@ -24,10 +24,25 @@ namespace Ecommerence.Service.Specification
         #region where
         public Expression<Func<TEntity, bool>> Criteria {get;}
         
+
         public BaseSpecification(Expression<Func<TEntity, bool>> CriteriaExp)
         {
             Criteria = CriteriaExp;
         }
         #endregion
+        
+         public Expression<Func<TEntity, object>> OrderBy { get; set; }
+
+        public Expression<Func<TEntity, object>> OrderByDescending { get; set; }
+
+        public void AddOrderBy(Expression<Func<TEntity, object>> orderExp)
+        {
+            OrderBy = orderExp;
+        }
+
+        public void AddOrderByDescending(Expression<Func<TEntity, object>> orderExp)
+        {
+            OrderByDescending = orderExp;
+        }
     }
 }

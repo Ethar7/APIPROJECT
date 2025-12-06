@@ -28,6 +28,16 @@ namespace Ecommerence.Persistence
             
                 Query = specification.IncludeExpression.Aggregate(Query , (CurrentQuery, IncludeExp) => CurrentQuery.Include(IncludeExp));
                 }
+
+                if (specification.OrderBy is not null)
+                {
+                    Query = Query.OrderBy(specification.OrderBy);
+                }
+
+                if (specification.OrderByDescending is not null)
+                {
+                    Query = Query.OrderByDescending(specification.OrderByDescending);
+                }
             }
             return Query;
 
