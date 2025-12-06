@@ -16,6 +16,11 @@ namespace Ecommerence.Persistence.Repositories
         public async Task AddAsync(TEntity entity)
             => await _dbContext.Set<TEntity>().AddAsync(entity);
 
+        public async Task<int> CountAsync(ISpecification<TEntity, TKey> specification)
+        {
+            return await SpecificationEvaluator.CreateQuery(_dbContext.Set<TEntity>(), specification).CountAsync();
+        }
+
         public async Task<IEnumerable<TEntity>> GetAllAsync()
             => await _dbContext.Set<TEntity>().ToListAsync();
 

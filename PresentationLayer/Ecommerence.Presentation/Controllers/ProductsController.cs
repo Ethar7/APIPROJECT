@@ -19,7 +19,7 @@ namespace Ecommerence.Presentation.Controllers
 
         #region Get All Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDtos>>> GetAllProduct([FromQuery] ProductQueryParams queryParams)
+        public async Task<ActionResult<PaginatedResult<ProductDtos>>> GetAllProduct([FromQuery] ProductQueryParams queryParams)
         {
             var Products = await _productServices.GetAllProductAsync(queryParams);
             return Ok(Products);
