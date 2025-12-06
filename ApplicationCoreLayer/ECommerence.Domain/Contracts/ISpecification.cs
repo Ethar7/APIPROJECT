@@ -12,5 +12,11 @@ namespace ECommerence.Domain.Contracts
         ICollection<Expression<Func<TEntity, object>>> IncludeExpression { get; }
 
         public Expression<Func<TEntity, bool>> Criteria {get;}
+
+        public Expression<Func<TEntity, object>> OrderBy {get; set;}
+
+        public Expression<Func<TEntity, object>> OrderByDescending {get; set;}
+
+       
     }
 }
