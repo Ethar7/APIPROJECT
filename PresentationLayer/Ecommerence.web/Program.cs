@@ -177,6 +177,8 @@ using Ecommerence.Service.MappingProfiles;
 using Ecommerence.Persistence.Repositories;
 using Ecommerence.ServiceAppstraction;
 using Ecommerence.Service;
+using System.Globalization;
+using Ecommerence.web.CustomMiddleWare;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services
@@ -206,6 +208,28 @@ app.MigrateDbAsync();   // Auto apply migrations
 app.SeedDbAsync();      // Seed data
 #endregion
 
+
+#region Configre the HTTP request pipeline
+
+// app.Use(async (context, next) =>
+// {
+//     var cultureQuery = context.Request.Query["culture"];
+//     if (!string.IsNullOrWhiteSpace(cultureQuery))
+//     {
+//         var culture = new CultureInfo(cultureQuery);
+
+//         CultureInfo.CurrentCulture = culture;
+//         CultureInfo.CurrentUICulture = culture;
+//     }
+
+//     await next(context);
+// });
+
+
+app.UseMiddleware<CustomExceptionMiddleware>();
+
+
+#endregion
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
