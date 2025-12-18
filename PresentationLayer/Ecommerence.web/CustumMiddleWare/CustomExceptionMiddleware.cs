@@ -1,6 +1,7 @@
 using System.Net;
 using System.Text.Json;
 using Ecommerence.Shared.ErrorModule;
+using ECommerence.Domain.Exceptions;
 
 namespace Ecommerence.web.CustomMiddleWare
 {
@@ -20,23 +21,49 @@ namespace Ecommerence.web.CustomMiddleWare
             try
             {
                 await _next.Invoke(httpContext);
+                await HandleNotFoundEndpointAsync(httpContext);
+
+                
             }
             catch (Exception ex)
             {
-                
+
                 _logger.LogError(ex, "SomethingWentWrong");
-                httpContext.Response.StatusCode=(int)HttpStatusCode.InternalServerError;
+                await HandleExceptionAsync(httpContext, ex);
+            }
+        }
 
-                httpContext.Response.ContentType="application/json";
+        private static async Task HandleExceptionAsync(HttpContext httpContext, Exception ex)
+        {
+            httpContext.Response.StatusCode = ex switch
+            {
+                NotFoundException => StatusCodes.Status404NotFound,
+                _ => StatusCodes.Status500InternalServerError
+            };
 
+            // httpContext.Response.ContentType="application/json";
+
+            var response = new ErrorToReturn()
+            {
+                StatusCode = StatusCodes.Status500InternalServerError,
+                ErrorMessage = ex.Message
+            };
+
+            // var responseToReturn = JsonSerializer.Serialize(response);
+
+            await httpContext.Response.WriteAsJsonAsync(response);
+        }
+
+
+        private static async Task HandleNotFoundEndpointAsync(HttpContext httpContext)
+        {
+            if (httpContext.Response.StatusCode == StatusCodes.Status404NotFound)
+            {
                 var response = new ErrorToReturn()
                 {
-                    StatusCode= StatusCodes.Status500InternalServerError,
-                    ErrorMessage = ex.Message
+                    StatusCode = StatusCodes.Status404NotFound,
+                    ErrorMessage = $"EndPoint {httpContext.Request.Path} Not Found"
                 };
-
-                // var responseToReturn = JsonSerializer.Serialize(response);
-
                 await httpContext.Response.WriteAsJsonAsync(response);
             }
         }
