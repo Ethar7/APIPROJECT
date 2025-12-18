@@ -9,6 +9,7 @@ using Ecommerence.Service.Specification;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Ecommerence.Shared;
+using ECommerence.Domain.Exceptions;
 
 namespace Ecommerence.Service
 {
@@ -55,7 +56,13 @@ namespace Ecommerence.Service
             var spec = new ProductWithBrandAndTypesSpecification(id);
             // var products = await _unitOfWork.GetRebository<Product, int>().GetAllAsync(spec);
             var product = await _unitOfWork.GetRebository<Product, int>().GetByIdAsync(spec);
-            return _mapper.Map<ProductDtos>(product);
+
+
+            if (product is not null)
+                    return _mapper.Map<ProductDtos>(product);
+            throw new ProductNotFoundException(id);
+         
+            // return _mapper.Map<ProductDtos>(product);
         }
     }
 }
