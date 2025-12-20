@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ecommerence.web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2be8bed27b99be6da8389ac66cc704fe3ae4bc4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbc74b4fd2a143d43c36ff7e1ba10b42bd037207")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ecommerence.web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ecommerence.web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
