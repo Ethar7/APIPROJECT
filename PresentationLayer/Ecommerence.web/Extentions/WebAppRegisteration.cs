@@ -1,4 +1,5 @@
 using Ecommerence.Persistence.Data.DbContexts;
+using Ecommerence.web.CustomMiddleWare;
 using ECommerence.Domain.Contracts;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,6 +31,12 @@ namespace Ecommerence.web.Extensions
 
             await DataInitializerService.InitilizeAsync();
 
+            return app;
+        }
+
+        public static IApplicationBuilder UseCustomExceptionMiddleWare(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<CustomExceptionMiddleware>();
             return app;
         }
     }
