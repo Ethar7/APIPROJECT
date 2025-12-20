@@ -179,27 +179,23 @@ using Ecommerence.ServiceAppstraction;
 using Ecommerence.Service;
 using System.Globalization;
 using Ecommerence.web.CustomMiddleWare;
+using Microsoft.AspNetCore.Mvc;
+using Ecommerence.Shared.ErrorModule;
+using Ecommerence.web.CustomMiddleWare.Factories;
+using Ecommerence.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services
 builder.Services.AddControllers();
 
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerServices();
 
-builder.Services.AddDbContext<StoreDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-});
+builder.Services.AddApplicationServices();
 
-builder.Services.AddScoped<IDataInitializer, DataInitializer>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddAutoMapper(X => X.AddProfile<ProductProfile>());
-builder.Services.AddScoped<IProductServices , ProductService>();
+builder.Services.AddInfrastructureServices(builder.Configuration);
+
+builder.Services.AddWebAppServices();
 
 var app = builder.Build();
 
@@ -226,8 +222,7 @@ app.SeedDbAsync();      // Seed data
 // });
 
 
-app.UseMiddleware<CustomExceptionMiddleware>();
-
+app.UseCustomExceptionMiddleWare();
 
 #endregion
 if (app.Environment.IsDevelopment())
