@@ -183,6 +183,9 @@ using Microsoft.AspNetCore.Mvc;
 using Ecommerence.Shared.ErrorModule;
 using Ecommerence.web.CustomMiddleWare.Factories;
 using Ecommerence.Persistence;
+using ECommerence.Domain.Entities.IdentityModules;
+using Microsoft.AspNetCore.Identity;
+using Ecommerence.Persistence.Data.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services
@@ -196,6 +199,17 @@ builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddWebAppServices();
+
+// builder.Services.AddScoped<IServiceManager, ServiceManager>();
+
+// builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+// builder.Services.AddScoped<IBasketService, BasketService>();
+
+// builder.Services.AddAutoMapper(typeof(BasketProfile));
+
+
 
 var app = builder.Build();
 
@@ -220,6 +234,7 @@ app.SeedDbAsync();      // Seed data
 
 //     await next(context);
 // });
+
 
 
 app.UseCustomExceptionMiddleWare();

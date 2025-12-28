@@ -30,6 +30,7 @@ namespace Ecommerence.web.Extensions
             var DataInitializerService = Scope.ServiceProvider.GetRequiredService<IDataInitializer>();
 
             await DataInitializerService.InitilizeAsync();
+            await DataInitializerService.IdentityDataSeedAsync();
 
             return app;
         }

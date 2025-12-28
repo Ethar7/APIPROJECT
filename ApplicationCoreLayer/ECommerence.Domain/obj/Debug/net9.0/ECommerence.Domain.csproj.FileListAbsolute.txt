@@ -10,3 +10,6 @@
 /home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/Debug/net9.0/refint/ECommerence.Domain.dll
 /home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/Debug/net9.0/ECommerence.Domain.pdb
 /home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/Debug/net9.0/ref/ECommerence.Domain.dll
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/bin/Debug/net9.0/ECommerence.Domain.runtimeconfig.json
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/Debug/net9.0/ECommerence.Domain.csproj.AssemblyReference.cache
+/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/Debug/net9.0/ECommerence.Domain.genruntimeconfig.cache
