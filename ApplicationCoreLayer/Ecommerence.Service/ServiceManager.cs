@@ -1,10 +1,13 @@
 using AutoMapper;
 using Ecommerence.ServiceAppstraction;
 using ECommerence.Domain.Contracts;
+using ECommerence.Domain.Entities.IdentityModules;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Identity.Client;
 
 namespace Ecommerence.Service
 {
-    public class ServiceManager(IUnitOfWork _unitOfWork, IMapper _mapper, IBasketRepository _basketRebository) : IServiceManager
+    public class ServiceManager(IUnitOfWork _unitOfWork, IMapper _mapper, IBasketRepository _basketRebository, UserManager<ApplicationUser> _userManager) : IServiceManager
     {
         private readonly Lazy<IProductServices> _lazyProductservice =
             new Lazy<IProductServices>(() => new ProductService(_unitOfWork, _mapper));        
@@ -14,5 +17,10 @@ namespace Ecommerence.Service
             new Lazy<IBasketService>(() => new BasketService(_basketRebository, _mapper));            
         
         public IBasketService BasketService => _lazyBasketservice.Value;
+
+        private readonly Lazy<IAuthunticationService> _lazyAuthenticationService= 
+        new Lazy<IAuthunticationService> (()=> new AuthunticationService(_userManager));
+
+        public IAuthunticationService AuthunticationService => _lazyAuthenticationService.Value;
     }
 }

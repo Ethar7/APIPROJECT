@@ -188,6 +188,9 @@ namespace Ecommerence.Persistence.Data.DataSeed
 
         public async Task IdentityDataSeedAsync()
         {
+            try
+            {
+                
             if (!_roleManager.Roles.Any())
             {
                await _roleManager.CreateAsync(new IdentityRole("Admin"));
@@ -218,6 +221,12 @@ namespace Ecommerence.Persistence.Data.DataSeed
                 await _userManager.AddToRoleAsync(Admin, "Admin");
                 await _userManager.AddToRoleAsync(SuperAdmin, "SuperAdmin");
 
+            }
+        }
+            catch (System.Exception)
+            {
+                
+                
             }
         }
     }
