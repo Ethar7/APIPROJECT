@@ -186,6 +186,7 @@ using Ecommerence.Persistence;
 using ECommerence.Domain.Entities.IdentityModules;
 using Microsoft.AspNetCore.Identity;
 using Ecommerence.Persistence.Data.Identity;
+using Microsoft.AspNetCore.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services
@@ -200,7 +201,9 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddWebAppServices();
 
-// builder.Services.AddScoped<IServiceManager, ServiceManager>();
+builder.Services.AddScoped<IServiceManager, ServiceManager>();
+
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
 // builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

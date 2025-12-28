@@ -215,8 +215,8 @@ namespace Ecommerence.Persistence.Data.DataSeed
                     UserName = "NadaSoliman"
                 };
 
-                await _userManager.CreateAsync(Admin);
-                await _userManager.CreateAsync(SuperAdmin);
+                await _userManager.CreateAsync(Admin, "P@ssw0rd");
+                await _userManager.CreateAsync(SuperAdmin, "P@ssw0rd");
 
                 await _userManager.AddToRoleAsync(Admin, "Admin");
                 await _userManager.AddToRoleAsync(SuperAdmin, "SuperAdmin");
