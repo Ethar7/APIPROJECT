@@ -80,7 +80,9 @@ using System.Text.Json;
 using Ecommerence.Persistence.Data.DbContexts;
 using ECommerence.Domain.Contracts;
 using ECommerence.Domain.Entities;
+using ECommerence.Domain.Entities.IdentityModules;
 using ECommerence.Domain.Entities.ProductModule;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerence.Persistence.Data.DataSeed
@@ -88,10 +90,17 @@ namespace Ecommerence.Persistence.Data.DataSeed
     public class DataInitializer : IDataInitializer
     {
         private readonly StoreDbContext _dbContext;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public DataInitializer(StoreDbContext dbContext)
+        public DataInitializer(StoreDbContext dbContext, 
+        UserManager<ApplicationUser> userManager,
+        RoleManager<IdentityRole> roleManager
+        )
         {
             _dbContext = dbContext;
+            _userManager = userManager;
+           _roleManager = roleManager;
         }
 
         public async Task InitilizeAsync()
@@ -175,6 +184,41 @@ namespace Ecommerence.Persistence.Data.DataSeed
             );
 
             return Path.GetFullPath(filePath);
+        }
+
+        public async Task IdentityDataSeedAsync()
+        {
+            if (!_roleManager.Roles.Any())
+            {
+               await _roleManager.CreateAsync(new IdentityRole("Admin"));
+               await _roleManager.CreateAsync(new IdentityRole("SuperAdmin"));
+            }
+
+            if(!_userManager.Users.Any())
+            {
+                var Admin = new ApplicationUser()
+                {
+                    Email= "Ahmedmohamed@gmail.com",
+                    DisplayName="Ahmedmohamed",
+                    PhoneNumber="01065721210",
+                    UserName = "AhmedMohamed"
+                };
+                
+                var SuperAdmin = new ApplicationUser()
+                {
+                    Email= "nadasoliman@gmail.com",
+                    DisplayName="NadaSoliman",
+                    PhoneNumber="01012321210",
+                    UserName = "NadaSoliman"
+                };
+
+                await _userManager.CreateAsync(Admin);
+                await _userManager.CreateAsync(SuperAdmin);
+
+                await _userManager.AddToRoleAsync(Admin, "Admin");
+                await _userManager.AddToRoleAsync(SuperAdmin, "SuperAdmin");
+
+            }
         }
     }
 }

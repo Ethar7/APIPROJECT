@@ -212,3 +212,7 @@
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.CodeAnalysis.Razor.dll
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Newtonsoft.Json.dll
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Pipelines.Sockets.Unofficial.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/StackExchange.Redis.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/System.IO.Hashing.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
