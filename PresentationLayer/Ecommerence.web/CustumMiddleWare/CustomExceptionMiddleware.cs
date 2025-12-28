@@ -35,19 +35,21 @@ namespace Ecommerence.web.CustomMiddleWare
 
         private static async Task HandleExceptionAsync(HttpContext httpContext, Exception ex)
         {
-            httpContext.Response.StatusCode = ex switch
+            var response = new ErrorToReturn()
+            {
+                ErrorMessage = ex.Message
+            };
+
+            response.StatusCode = ex switch
             {
                 NotFoundException => StatusCodes.Status404NotFound,
+                UnauthorizedException => StatusCodes.Status401Unauthorized,
+                BadRequestException badReqEx=> GetBadRequestErrors(response, badReqEx),
                 _ => StatusCodes.Status500InternalServerError
             };
 
             // httpContext.Response.ContentType="application/json";
 
-            var response = new ErrorToReturn()
-            {
-                StatusCode = StatusCodes.Status500InternalServerError,
-                ErrorMessage = ex.Message
-            };
 
             // var responseToReturn = JsonSerializer.Serialize(response);
 
@@ -66,6 +68,11 @@ namespace Ecommerence.web.CustomMiddleWare
                 };
                 await httpContext.Response.WriteAsJsonAsync(response);
             }
+        }
+        private static int GetBadRequestErrors(ErrorToReturn response, BadRequestException exception)
+        {
+           response.Errors= exception.Errors;
+           return StatusCodes.Status400BadRequest;
         }
     }
 }
