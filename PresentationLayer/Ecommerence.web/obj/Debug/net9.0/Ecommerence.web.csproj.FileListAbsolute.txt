@@ -216,3 +216,4 @@
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/StackExchange.Redis.dll
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/System.IO.Hashing.dll
 /home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.web/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
