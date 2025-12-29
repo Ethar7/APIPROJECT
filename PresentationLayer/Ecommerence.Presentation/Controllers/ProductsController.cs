@@ -2,12 +2,14 @@
 using Ecommerence.ServiceAppstraction;
 using Ecommerence.Shared;
 using Ecommerence.Shared.DTOS.ProductDtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecommerence.Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductServices _productServices;

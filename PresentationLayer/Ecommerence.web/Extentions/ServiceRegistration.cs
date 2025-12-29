@@ -1,5 +1,8 @@
+using System.Text;
 using Ecommerence.web.CustomMiddleWare.Factories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 namespace Ecommerence.web.Extensions
@@ -28,6 +31,40 @@ namespace Ecommerence.web.Extensions
             });
             return services;
         }
+
+         
+
+        public static IServiceCollection AddJWTServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = configuration.GetSection("JWTOptions")["Issuer"],
+
+                    ValidateAudience = true,
+                    ValidAudience = configuration.GetSection("JWTOptions")["Audience"],
+
+                    ValidateLifetime = true,
+
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(
+                            configuration.GetSection("JWTOptions")["SecretKey"]!
+                        )
+                    )
+                };
+            });
+
+            return services;
+        }
+
 
     
     }
