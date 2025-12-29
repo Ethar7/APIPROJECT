@@ -1,13 +1,18 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using AutoMapper;
 using Ecommerence.ServiceAppstraction;
 using Ecommerence.Shared.DTOS.IdentityDTOS;
 using ECommerence.Domain.Entities.IdentityModules;
 using ECommerence.Domain.Exceptions;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 
 namespace  Ecommerence.Service
 {
-    public class AuthunticationService(UserManager<ApplicationUser> _userManager) : IAuthunticationService
+    public class AuthunticationService(UserManager<ApplicationUser> _userManager, IConfiguration _configuration) : IAuthunticationService
     {
         public async Task<UserDto> LoginAsync(LoginDto loginDto)
         {
@@ -20,13 +25,38 @@ namespace  Ecommerence.Service
                 {
                     Email = user.Email,
                     DisplayName = user.DisplayName,
-                    Token= "TODO"
+                    Token= await CreateTokenAsync(user)
                 };
             }else throw new UnauthorizedException();
         }
-        private static string CreateTokenAsync()
+        private async Task<string> CreateTokenAsync(ApplicationUser user)
         {
-            return "TODO";
+            #region JWT Token Payload
+            var claims = new List<Claim>()
+            {
+                new (ClaimTypes.Email, user.Email!),
+                new (ClaimTypes.Name, user.UserName!),
+                new (ClaimTypes.NameIdentifier, user.Id!)
+            };
+            var roles = await _userManager.GetRolesAsync(user);
+            foreach (var role in roles)
+                claims.Add(new Claim(ClaimTypes.Role, role));
+            
+            #endregion
+            
+            var secretKey = _configuration.GetSection("JWTOptions")["SecretKey"];
+            var Key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
+
+            var creds= new SigningCredentials(Key, SecurityAlgorithms.HmacSha256);
+            var token = new JwtSecurityToken(
+            issuer: _configuration.GetSection("JWTOptions")["Issuer"],
+            audience: _configuration.GetSection("JWTOptions")["Audience"],
+            claims: claims,
+            expires: DateTime.Now.AddHours(1),
+            signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         public async Task<UserDto> RegisterAsync(RegisterDto registerDto)
@@ -44,7 +74,7 @@ namespace  Ecommerence.Service
             {
                 DisplayName = registerDto.DisplayName,
                 Email = registerDto.Email,
-                Token= CreateTokenAsync()
+                Token= await CreateTokenAsync(appUser)
             };
             else
             {
