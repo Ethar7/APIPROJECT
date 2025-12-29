@@ -200,6 +200,7 @@ builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddWebAppServices();
+builder.Services.AddJWTServices(builder.Configuration);
 
 builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
