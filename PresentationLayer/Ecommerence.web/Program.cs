@@ -278,6 +278,8 @@ app.MapGet("/weatherforecast", () =>
         )).ToArray();
     return forecast;
 });
+app.UseAuthentication();   
+app.UseAuthorization(); 
 
 app.Run();
 
