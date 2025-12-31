@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApplicationServiceAppstraction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1e0d664fd4d955e78637e24f7d153603798ce90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4da15e1bdbc3d21aaa2d03acc47d8597d272ee3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApplicationServiceAppstraction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApplicationServiceAppstraction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
