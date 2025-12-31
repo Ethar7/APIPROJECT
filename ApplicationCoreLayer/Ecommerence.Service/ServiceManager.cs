@@ -20,7 +20,7 @@ namespace Ecommerence.Service
         public IBasketService BasketService => _lazyBasketservice.Value;
 
         private readonly Lazy<IAuthunticationService> _lazyAuthenticationService= 
-        new Lazy<IAuthunticationService> (()=> new AuthunticationService(_userManager, _configuration));
+        new Lazy<IAuthunticationService> (()=> new AuthunticationService(_userManager, _configuration, _mapper));
 
         public IAuthunticationService AuthunticationService => _lazyAuthenticationService.Value;
     }
