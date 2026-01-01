@@ -2,6 +2,7 @@ using System.Text;
 using Ecommerence.web.CustomMiddleWare.Factories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
@@ -17,7 +18,30 @@ namespace Ecommerence.web.Extensions
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Ecommerce API Project", Version = "v1" });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    In=ParameterLocation.Header,
+                    Name="Authorization",
+                    Type=SecuritySchemeType.ApiKey,
+                    Scheme="Bearer",
+                    Description="Enter 'Bearer' Followed By Space and Then Enter Your Token"
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference=new OpenApiReference()
+                            {
+                                Id = "Bearer",
+                                Type=ReferenceType.SecurityScheme
+                            }
+                        }
+                        ,
+                        new string[]{}
+                    }
+                });
             });
 
             return services;
