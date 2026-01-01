@@ -17,5 +17,12 @@ namespace Ecommerence.Presentation.Controllers
 
            return Ok(order);
         }
+
+        [HttpGet("deliverymethods")]
+        public async Task<ActionResult<IEnumerable<DeliveryMethodDto>>> GetAllDeliveryMethods()
+        {
+            var deliverymethods = await _serviceManager.orderService.GetDeliveryMethodsAsync();
+            return Ok(deliverymethods);
+        }
     }
 }

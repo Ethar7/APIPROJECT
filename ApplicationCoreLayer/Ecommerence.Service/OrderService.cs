@@ -1,5 +1,6 @@
 using AutoMapper;
 using DomainLayer.Models.OrderModels;
+using Ecommerence.Service.Specification.OrderSpecification;
 using Ecommerence.ServiceAppstraction;
 using Ecommerence.Shared.DTOS.IdentityDTOS;
 using Ecommerence.Shared.DTOS.OrderDTOS;
@@ -59,7 +60,31 @@ namespace Ecommerence.Service
 
             await _unitOfWork.SaveChangesAsync();
 
+            var orderToReturn = _mapper.Map<Order, OrderToReturnDto>(order);
+            return orderToReturn;
+        }
 
+        public async Task<IEnumerable<OrderToReturnDto>> GetAllOrdersAsync(string email)
+        {
+            var specs = new OrderSpec(email);
+
+            var orders = await _unitOfWork.GetRebository<Order, Guid>().GetAllAsync(specs);
+            return _mapper.Map<IEnumerable<OrderToReturnDto>>(orders);
+
+        }
+
+        public async Task<IEnumerable<DeliveryMethodDto>> GetDeliveryMethodsAsync()
+        {
+            var deliverymethod = await _unitOfWork.GetRebository<DeliveryMethod, int>().GetAllAsync();
+
+            return _mapper.Map<IEnumerable<DeliveryMethodDto>>(deliverymethod);
+        }
+
+        public async Task<OrderToReturnDto> GetOrderAsync(Guid id)
+        {
+            var specs = new OrderSpec(id);
+            var orders = await _unitOfWork.GetRebository<Order, Guid>().GetByIdAsync(specs);
+            return _mapper.Map<OrderToReturnDto>(orders);
         }
     }
 }
