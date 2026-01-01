@@ -1,0 +1,39 @@
+[
+    {
+      "shortName": "Standard",
+      "description": "Standard delivery within the city",
+      "deliveryTime": "3-5 Days",
+      "price": 50.00
+    },
+    {
+      "shortName": "Express",
+      "description": "Fast delivery for urgent orders",
+      "deliveryTime": "1-2 Days",
+      "price": 100.00
+    },
+    {
+      "shortName": "SameDay",
+      "description": "Delivery on the same day",
+      "deliveryTime": "Same Day",
+      "price": 150.00
+    },
+    {
+      "shortName": "Overnight",
+      "description": "Overnight delivery service",
+      "deliveryTime": "Next Day",
+      "price": 120.00
+    },
+    {
+      "shortName": "International",
+      "description": "International shipping outside the country",
+      "deliveryTime": "7-14 Days",
+      "price": 350.00
+    },
+    {
+      "shortName": "Free",
+      "description": "Free delivery for orders above 1000 EGP",
+      "deliveryTime": "5-7 Days",
+      "price": 0.00
+    }
+  ]
+  
