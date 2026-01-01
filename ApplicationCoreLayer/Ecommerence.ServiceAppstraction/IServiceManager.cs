@@ -7,5 +7,7 @@ namespace Ecommerence.ServiceAppstraction
         public IBasketService BasketService{get;}
 
         public IAuthunticationService AuthunticationService{get;}
+
+        public IOrderService orderService {get;}
     }
 }

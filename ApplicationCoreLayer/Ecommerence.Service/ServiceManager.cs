@@ -23,5 +23,11 @@ namespace Ecommerence.Service
         new Lazy<IAuthunticationService> (()=> new AuthunticationService(_userManager, _configuration, _mapper));
 
         public IAuthunticationService AuthunticationService => _lazyAuthenticationService.Value;
+
+        private readonly Lazy<IOrderService> _lazyOrderService= 
+        new Lazy<IOrderService> (()=> new OrderService(_mapper, _basketRebository, _unitOfWork));
+
+
+        public IOrderService orderService => _lazyOrderService.Value;
     }
 }
