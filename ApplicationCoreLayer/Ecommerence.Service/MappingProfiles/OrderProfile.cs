@@ -20,6 +20,8 @@ namespace Ecommerence.Service.MappingProfiles
                 .ForMember(dest=>dest.ProductName, options=>options.MapFrom(scr=> scr.Product.ProductName))
 
                 .ForMember(dest=>dest.PictureUrl, options=>options.MapFrom<OrderItemPictureUrlResolver>());
+
+            CreateMap<DeliveryMethod, DeliveryMethodDto>();
         }
     }
 }

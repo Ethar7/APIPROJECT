@@ -6,6 +6,12 @@ namespace Ecommerence.ServiceAppstraction
     {
         Task<OrderToReturnDto> CreateOrder(OrderDto orderDto, string email);
 
-        
+        Task<IEnumerable<DeliveryMethodDto>> GetDeliveryMethodsAsync();
+
+        Task<IEnumerable<OrderToReturnDto>> GetAllOrdersAsync(string emai);
+
+        Task<OrderToReturnDto> GetOrderAsync(Guid id);
+
+
     }
 }
