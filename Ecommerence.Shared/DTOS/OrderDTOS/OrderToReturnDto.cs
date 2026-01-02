@@ -7,15 +7,15 @@ namespace Ecommerence.Shared.DTOS.OrderDTOS
     {
         public Guid Id{get; set;}
 
-        public string UserEmail {get; set;} = null!;
+        public string BuyerEmail {get; set;} = null!;
 
         public DateTimeOffset OrderDate {get; set;}
 
-        public AddressDto Address {get; set;} = null!;
+        public AddressDto ShipToAddress {get; set;} = null!;
 
         public string DeliveryMethod {get; set;} = null!;
 
-        public string OrderStatus {get; set;}
+        public string Status {get; set;}
 
         public ICollection<OrderItemDto> Items {get; set;} = [];
 

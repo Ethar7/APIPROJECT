@@ -67,7 +67,7 @@ namespace  Ecommerence.Service
                 DisplayName=registerDto.DisplayName,
                 Email=registerDto.Email,
                 PhoneNumber=registerDto.PhoneNumber,
-                UserName=registerDto.UserName
+                UserName=registerDto.UserName ?? registerDto.Email.Split("@")[0],
             };
             var res = await _userManager.CreateAsync(appUser, registerDto.Password);
         
@@ -95,11 +95,11 @@ namespace  Ecommerence.Service
         {
             var user = await _userManager.Users.Include(u=>u.Address).FirstOrDefaultAsync(u=>u.Email==email);
 
-            if (user.Address is not null)
-            {
+            // if (user.Address is not null)
+            // {
                 return _mapper.Map<Address, AddressDto>(user.Address);
-
-            }else throw new AddressNotFoundException(user.UserName!);
+            
+            // }else throw new AddressNotFoundException(user.UserName!);
             
         }
         public async Task<UserDto> GetCurrentUserAsync(string email)

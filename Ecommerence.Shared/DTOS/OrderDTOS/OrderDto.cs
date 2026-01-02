@@ -8,6 +8,6 @@ namespace Ecommerence.Shared.DTOS.OrderDTOS
 
         public int DeliveryMethodId {get; set;}
 
-        public AddressDto Address{get; set;}
+        public AddressDto ShipToAddress{get; set;}
     }
 }
