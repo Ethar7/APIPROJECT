@@ -23,6 +23,15 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddWebAppServices();
 builder.Services.AddJWTServices(builder.Configuration);
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyHeader();
+        builder.AllowAnyMethod();
+        builder.AllowAnyOrigin();
+    });
+});
 
 // builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
@@ -112,6 +121,7 @@ app.MapGet("/weatherforecast", () =>
 });
 app.UseAuthentication();   
 app.UseAuthorization(); 
+app.UseCors("AllowAll");
 
 app.Run();
 
