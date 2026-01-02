@@ -32,6 +32,7 @@ namespace Ecommerence.Persistence
 
             services.AddScoped<IDataInitializer, DataInitializer>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICacheRepository, CacheRepository>();
 
             services.AddScoped<IBasketRepository,BasketRepository>();
             services.AddSingleton<IConnectionMultiplexer>((_) =>
