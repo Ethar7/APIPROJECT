@@ -75,7 +75,8 @@ namespace Ecommerence.Persistence.Data.DataSeed
                         Email = "Ahmedmohamed@gmail.com",
                         UserName = "AhmedMohamed",
                         DisplayName = "AhmedMohamed",
-                        PhoneNumber = "01065721210"
+                        PhoneNumber = "01065721210",
+                        EmailConfirmed = true
                     };
 
                     var superAdmin = new ApplicationUser
@@ -83,7 +84,8 @@ namespace Ecommerence.Persistence.Data.DataSeed
                         Email = "nadasoliman@gmail.com",
                         UserName = "NadaSoliman",
                         DisplayName = "NadaSoliman",
-                        PhoneNumber = "01012321210"
+                        PhoneNumber = "01012321210",
+                        EmailConfirmed = true
                     };
 
                     await _userManager.CreateAsync(admin, "P@ssw0rd");
