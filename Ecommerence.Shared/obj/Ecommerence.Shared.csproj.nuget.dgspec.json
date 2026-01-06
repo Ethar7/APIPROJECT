@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj": {}
+    "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj": {}
   },
   "projects": {
-    "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj": {
+    "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj",
         "projectName": "Ecommerence.Shared",
-        "projectPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/Ecommerence.Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"

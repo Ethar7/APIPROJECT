@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj": {}
+    "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj": {}
   },
   "projects": {
-    "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj": {
+    "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
         "projectName": "ECommerence.Domain",
-        "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj": {
+    "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj",
         "projectName": "Ecommerence.Service",
-        "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"
@@ -101,11 +101,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj": {
-                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj"
+              "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj": {
+                "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj"
               },
-              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
-                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj"
+              "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
+                "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj"
               }
             }
           }
@@ -129,6 +129,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[50.1.0, )"
             }
           },
           "imports": [
@@ -151,14 +155,14 @@
         }
       }
     },
-    "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
+    "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj",
         "projectName": "ApplicationServiceAppstraction",
-        "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"
@@ -173,8 +177,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj": {
-                "projectPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj"
+              "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj": {
+                "projectPath": "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj"
               }
             }
           }
@@ -214,14 +218,14 @@
         }
       }
     },
-    "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj": {
+    "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj",
         "projectName": "Ecommerence.Shared",
-        "projectPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/Ecommerence.Shared.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/Ecommerence.Shared/Ecommerence.Shared.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/Ecommerence.Shared/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/Ecommerence.Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"
@@ -273,14 +277,14 @@
         }
       }
     },
-    "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
+    "/home/ethar/APIPROJECT/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj",
         "projectName": "Ecommerence.Persistence",
-        "projectPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/InfrastructureLayer/Ecommerence.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"
@@ -295,8 +299,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj": {
-                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj"
+              "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj": {
+                "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.Service/Ecommerence.Service.csproj"
               }
             }
           }
@@ -356,14 +360,14 @@
         }
       }
     },
-    "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj": {
+    "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj",
+        "projectUniqueName": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj",
         "projectName": "Ecommerence.Presentation",
-        "projectPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj",
+        "projectPath": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.Presentation/Ecommerence.Presentation.csproj",
         "packagesPath": "/home/ethar/.nuget/packages/",
-        "outputPath": "/home/ethar/Desktop/APIProject/PresentationLayer/Ecommerence.Presentation/obj/",
+        "outputPath": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.Presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ethar/.nuget/NuGet/NuGet.Config"
@@ -378,11 +382,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
-                "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj"
+              "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj": {
+                "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/Ecommerence.ServiceAppstraction/ApplicationServiceAppstraction.csproj"
               },
-              "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
-                "projectPath": "/home/ethar/Desktop/APIProject/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj"
+              "/home/ethar/APIPROJECT/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj": {
+                "projectPath": "/home/ethar/APIPROJECT/InfrastructureLayer/Ecommerence.Persistence/Ecommerence.Persistence.csproj"
               }
             }
           }

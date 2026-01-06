@@ -3146,11 +3146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
+      "projectUniqueName": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
       "projectName": "ECommerence.Domain",
-      "projectPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
+      "projectPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/ECommerence.Domain.csproj",
       "packagesPath": "/home/ethar/.nuget/packages/",
-      "outputPath": "/home/ethar/Desktop/APIProject/ApplicationCoreLayer/ECommerence.Domain/obj/",
+      "outputPath": "/home/ethar/APIPROJECT/ApplicationCoreLayer/ECommerence.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ethar/.nuget/NuGet/NuGet.Config"
