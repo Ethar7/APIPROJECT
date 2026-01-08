@@ -11,28 +11,28 @@ namespace Ecommerence.Presentation.Controllers
 
     public class AuthenticationController(IServiceManager _serviceManager) : ControllerBase
     {
-        [HttpPost("login")]
+        [HttpPost("Login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
            var user = await _serviceManager.AuthunticationService.LoginAsync(loginDto);
            return Ok(user);
         }
 
-        [HttpPost("register")]
+        [HttpPost("Register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
            var user = await _serviceManager.AuthunticationService.RegisterAsync(registerDto);
            return Ok(user);
         }
 
-        [HttpGet("checkemail")]
+        [HttpGet("CheckEmail")]
         public async Task<ActionResult<bool>> CheckEmail(string email)
         {
             var result = await _serviceManager.AuthunticationService.CheckEmailAsync(email);
             return Ok(result);
         }
         [Authorize]
-        [HttpGet]
+        [HttpGet("CurrentUser")]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
             var email = User.FindFirstValue(ClaimTypes.Email);
@@ -41,7 +41,7 @@ namespace Ecommerence.Presentation.Controllers
         }
 
         [Authorize]
-        [HttpGet("address")]
+        [HttpGet("Address")]
 
         public async Task<ActionResult<AddressDto>> GetCurrentAddress()
         {
@@ -52,7 +52,7 @@ namespace Ecommerence.Presentation.Controllers
         }
 
         [Authorize]
-        [HttpPut("address")]
+        [HttpPut("Address")]
 
         public async Task<ActionResult<AddressDto>> UpdateCurrentAddress(AddressDto addressDto)
         {

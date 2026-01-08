@@ -1,5 +1,4 @@
 
-
 using Ecommerence.web.Extensions;
 
 using Ecommerence.ServiceAppstraction;
@@ -9,6 +8,7 @@ using Ecommerence.Persistence;
 
 using Microsoft.AspNetCore.Authentication;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using Ecommerence.Service.MappingProfiles;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services
@@ -27,15 +27,21 @@ builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("AllowAll", builder =>
     {
-        builder.AllowAnyHeader();
-        builder.AllowAnyMethod();
-        builder.AllowAnyOrigin();
+        builder
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });
+
 
 // builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
+
+
 
 // builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -91,13 +97,17 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// Complete MVC pipeline
 app.UseRouting();
-// OPTIONAL if you have it later
-// app.UseAuthentication();
-// app.UseAuthorization();
+
+app.UseCors("AllowAll");
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
+
 
 // Test endpoint
 app.MapGet("/", () => "Hello World!");
@@ -119,9 +129,7 @@ app.MapGet("/weatherforecast", () =>
         )).ToArray();
     return forecast;
 });
-app.UseAuthentication();   
-app.UseAuthorization(); 
-app.UseCors("AllowAll");
+
 
 app.Run();
 

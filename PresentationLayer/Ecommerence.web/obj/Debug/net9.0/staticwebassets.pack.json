@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CasualSneakers.jpg",
+      "PackagePath": "staticwebassets/images/products/CasualSneakers.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicBlackDressPants.jpg",
+      "PackagePath": "staticwebassets/images/products/ClassicBlackDressPants.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicWhiteTShirt.jpeg",
+      "PackagePath": "staticwebassets/images/products/ClassicWhiteTShirt.jpeg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CottonHoodie.jpg",
+      "PackagePath": "staticwebassets/images/products/CottonHoodie.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/DenimJacket.jpg",
+      "PackagePath": "staticwebassets/images/products/DenimJacket.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/FormalBlazor.jpg",
+      "PackagePath": "staticwebassets/images/products/FormalBlazor.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/KnittedSweater.jpg",
+      "PackagePath": "staticwebassets/images/products/KnittedSweater.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensLeatherJacket.jpg",
+      "PackagePath": "staticwebassets/images/products/MensLeatherJacket.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensPoloShirt.jpg",
+      "PackagePath": "staticwebassets/images/products/MensPoloShirt.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SlimFitJeans.jpg",
+      "PackagePath": "staticwebassets/images/products/SlimFitJeans.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SummerFloralDress.jpg",
+      "PackagePath": "staticwebassets/images/products/SummerFloralDress.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WomenTrenchCoat.jpg",
+      "PackagePath": "staticwebassets/images/products/WomenTrenchCoat.jpg"
+    },
+    {
+      "Id": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WoolScarf.jpg",
+      "PackagePath": "staticwebassets/images/products/WoolScarf.jpg"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Ecommerence.web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Ecommerence.web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Ecommerence.web.props",
+      "PackagePath": "build\\Ecommerence.web.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Ecommerence.web.props",
+      "PackagePath": "buildMultiTargeting\\Ecommerence.web.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Ecommerence.web.props",
+      "PackagePath": "buildTransitive\\Ecommerence.web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

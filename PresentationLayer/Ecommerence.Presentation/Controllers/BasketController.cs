@@ -1,21 +1,25 @@
 using Ecommerence.ServiceAppstraction;
 using Ecommerence.Shared.DTOS.BasketDtos;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecommerence.Presentation.Controllers
 {
-
     [ApiController]
-    [Route("api/[Controller]")]
-
-    public class BasketController(IServiceManager _serviceManager) : ControllerBase
-
+    [Route("api/[controller]")]
+    public class BasketController : ControllerBase
     {
-        [HttpGet]
-        public async Task<ActionResult<BasketDto>> GetBasket(string Key)
+        private readonly IServiceManager _serviceManager;
+
+        // Constructor injection بالشكل التقليدي
+        public BasketController(IServiceManager serviceManager)
         {
-            var basket = await _serviceManager.BasketService.GetBasketAsync(Key);
+            _serviceManager = serviceManager;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<BasketDto>> GetBasket(string id)
+        {
+            var basket = await _serviceManager.BasketService.GetBasketAsync(id);
             return Ok(basket);
         }
 
@@ -27,9 +31,9 @@ namespace Ecommerence.Presentation.Controllers
         }
 
         [HttpDelete]
-        public async Task<ActionResult<bool>> DeleteBasket(string Key)
+        public async Task<ActionResult<bool>> DeleteBasket(string key)
         {
-            var res = await _serviceManager.BasketService.DeleteBasketAsync(Key);
+            var res = await _serviceManager.BasketService.DeleteBasketAsync(key);
             return Ok(res);
         }
     }

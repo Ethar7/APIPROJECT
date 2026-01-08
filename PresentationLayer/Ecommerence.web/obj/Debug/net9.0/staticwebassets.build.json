@@ -1,12 +1,1361 @@
 {
   "Version": 1,
-  "Hash": "v7+rEixYBHFvKJ2Z6ZBVFWFIH2up5pbefONR4lJQgys=",
+  "Hash": "jRJM6gW+fbAzlyeCmaaOkxN3mKt1r39/wIn876poQCA=",
   "Source": "Ecommerence.web",
   "BasePath": "_content/Ecommerence.web",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Ecommerence.web/wwwroot",
+      "Source": "Ecommerence.web",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CasualSneakers.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/CasualSneakers#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vkjhz6xplm",
+      "Integrity": "oVfASqiz0q6ZtcOOJUNRyYCuavtSiiObyJaNjsqABuM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/CasualSneakers.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicBlackDressPants.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/ClassicBlackDressPants#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tggjlk8x48",
+      "Integrity": "42CwyJu1coL9otEkzPaNQ7d+5aJ2pMDO3fX+k3k0clQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/ClassicBlackDressPants.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicWhiteTShirt.jpeg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/ClassicWhiteTShirt#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v59tkkvr9t",
+      "Integrity": "o+caeeE+GsMR0HopsHQz0xofCW+I3Dy1nzzDnYwgBE4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/ClassicWhiteTShirt.jpeg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CottonHoodie.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/CottonHoodie#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h0369y2xbm",
+      "Integrity": "wSVMREax0zcYJqtg9UZYmZLFbXoAekvgC8JzOpJ3yGk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/CottonHoodie.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/DenimJacket.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/DenimJacket#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhn67d38b5",
+      "Integrity": "m1gPSDO+23zSj0gaC5oWH0pob8D3S0v6UGYBOHrhj0M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/DenimJacket.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/FormalBlazor.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/FormalBlazor#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l74u1wrbzj",
+      "Integrity": "0QF2ycMCZatMvxp+Fz+8ERkJsWpbV7d2u7ZTR0qOWYo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/FormalBlazor.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/KnittedSweater.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/KnittedSweater#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ir39dbxooz",
+      "Integrity": "sjucUJ2h6Iv/1VGi8r9HEYGZ2MZzwzof1sxOTOvrzIo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/KnittedSweater.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensLeatherJacket.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/MensLeatherJacket#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ykk6vf1810",
+      "Integrity": "TiePGfhIpkmYvo4nMtA7lMEGpoe4Tg+ZtEHDMWVTso8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/MensLeatherJacket.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensPoloShirt.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/MensPoloShirt#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d03ctx3q25",
+      "Integrity": "w1TrgHqsQF/Jw+oUOfB1jN6+eok7Kmxs+Xl4n/CNjto=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/MensPoloShirt.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SlimFitJeans.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/SlimFitJeans#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mypwkzb0bz",
+      "Integrity": "kgQ3PJpA5obLhp5uG+79a4MZOWAKaHAvJyt7Wm5pVug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/SlimFitJeans.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SummerFloralDress.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/SummerFloralDress#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yvbrtk0dou",
+      "Integrity": "Ej5nfp2pv3fShGpSFc/OXLIEaJncUvQKYfxzcRQc578=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/SummerFloralDress.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WomenTrenchCoat.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/WomenTrenchCoat#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "65m5dijffv",
+      "Integrity": "WqS/o/ZDGeA54f1dUljWcC/ATsPSavsqG1AjRsHUBSg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/WomenTrenchCoat.jpg"
+    },
+    {
+      "Identity": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WoolScarf.jpg",
+      "SourceId": "Ecommerence.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/",
+      "BasePath": "_content/Ecommerence.web",
+      "RelativePath": "images/products/WoolScarf#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qut666jnvk",
+      "Integrity": "omojJabTR654hEOIB+pkQobem4cA5TWxC2eZV4i4ygw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/WoolScarf.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/products/CasualSneakers.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CasualSneakers.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4962"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oVfASqiz0q6ZtcOOJUNRyYCuavtSiiObyJaNjsqABuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 19:58:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oVfASqiz0q6ZtcOOJUNRyYCuavtSiiObyJaNjsqABuM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/CasualSneakers.vkjhz6xplm.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CasualSneakers.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4962"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oVfASqiz0q6ZtcOOJUNRyYCuavtSiiObyJaNjsqABuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 19:58:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vkjhz6xplm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/CasualSneakers.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oVfASqiz0q6ZtcOOJUNRyYCuavtSiiObyJaNjsqABuM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ClassicBlackDressPants.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicBlackDressPants.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"42CwyJu1coL9otEkzPaNQ7d+5aJ2pMDO3fX+k3k0clQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:45:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-42CwyJu1coL9otEkzPaNQ7d+5aJ2pMDO3fX+k3k0clQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ClassicBlackDressPants.tggjlk8x48.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicBlackDressPants.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"42CwyJu1coL9otEkzPaNQ7d+5aJ2pMDO3fX+k3k0clQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:45:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tggjlk8x48"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/ClassicBlackDressPants.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-42CwyJu1coL9otEkzPaNQ7d+5aJ2pMDO3fX+k3k0clQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ClassicWhiteTShirt.jpeg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicWhiteTShirt.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o+caeeE+GsMR0HopsHQz0xofCW+I3Dy1nzzDnYwgBE4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:48:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o+caeeE+GsMR0HopsHQz0xofCW+I3Dy1nzzDnYwgBE4="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ClassicWhiteTShirt.v59tkkvr9t.jpeg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/ClassicWhiteTShirt.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o+caeeE+GsMR0HopsHQz0xofCW+I3Dy1nzzDnYwgBE4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:48:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v59tkkvr9t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/ClassicWhiteTShirt.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o+caeeE+GsMR0HopsHQz0xofCW+I3Dy1nzzDnYwgBE4="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/CottonHoodie.h0369y2xbm.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CottonHoodie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wSVMREax0zcYJqtg9UZYmZLFbXoAekvgC8JzOpJ3yGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:52:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h0369y2xbm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/CottonHoodie.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wSVMREax0zcYJqtg9UZYmZLFbXoAekvgC8JzOpJ3yGk="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/CottonHoodie.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/CottonHoodie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wSVMREax0zcYJqtg9UZYmZLFbXoAekvgC8JzOpJ3yGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:52:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wSVMREax0zcYJqtg9UZYmZLFbXoAekvgC8JzOpJ3yGk="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/DenimJacket.hhn67d38b5.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/DenimJacket.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m1gPSDO+23zSj0gaC5oWH0pob8D3S0v6UGYBOHrhj0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:56:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhn67d38b5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/DenimJacket.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m1gPSDO+23zSj0gaC5oWH0pob8D3S0v6UGYBOHrhj0M="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/DenimJacket.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/DenimJacket.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m1gPSDO+23zSj0gaC5oWH0pob8D3S0v6UGYBOHrhj0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:56:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m1gPSDO+23zSj0gaC5oWH0pob8D3S0v6UGYBOHrhj0M="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/FormalBlazor.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/FormalBlazor.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0QF2ycMCZatMvxp+Fz+8ERkJsWpbV7d2u7ZTR0qOWYo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0QF2ycMCZatMvxp+Fz+8ERkJsWpbV7d2u7ZTR0qOWYo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/FormalBlazor.l74u1wrbzj.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/FormalBlazor.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0QF2ycMCZatMvxp+Fz+8ERkJsWpbV7d2u7ZTR0qOWYo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 20:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l74u1wrbzj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/FormalBlazor.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0QF2ycMCZatMvxp+Fz+8ERkJsWpbV7d2u7ZTR0qOWYo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/KnittedSweater.ir39dbxooz.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/KnittedSweater.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sjucUJ2h6Iv/1VGi8r9HEYGZ2MZzwzof1sxOTOvrzIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 21:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ir39dbxooz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/KnittedSweater.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sjucUJ2h6Iv/1VGi8r9HEYGZ2MZzwzof1sxOTOvrzIo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/KnittedSweater.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/KnittedSweater.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sjucUJ2h6Iv/1VGi8r9HEYGZ2MZzwzof1sxOTOvrzIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 21:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sjucUJ2h6Iv/1VGi8r9HEYGZ2MZzwzof1sxOTOvrzIo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/MensLeatherJacket.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensLeatherJacket.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TiePGfhIpkmYvo4nMtA7lMEGpoe4Tg+ZtEHDMWVTso8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 23:03:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TiePGfhIpkmYvo4nMtA7lMEGpoe4Tg+ZtEHDMWVTso8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/MensLeatherJacket.ykk6vf1810.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensLeatherJacket.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TiePGfhIpkmYvo4nMtA7lMEGpoe4Tg+ZtEHDMWVTso8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 23:03:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ykk6vf1810"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/MensLeatherJacket.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TiePGfhIpkmYvo4nMtA7lMEGpoe4Tg+ZtEHDMWVTso8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/MensPoloShirt.d03ctx3q25.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensPoloShirt.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w1TrgHqsQF/Jw+oUOfB1jN6+eok7Kmxs+Xl4n/CNjto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 22:54:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d03ctx3q25"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/MensPoloShirt.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w1TrgHqsQF/Jw+oUOfB1jN6+eok7Kmxs+Xl4n/CNjto="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/MensPoloShirt.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/MensPoloShirt.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w1TrgHqsQF/Jw+oUOfB1jN6+eok7Kmxs+Xl4n/CNjto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 22:54:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w1TrgHqsQF/Jw+oUOfB1jN6+eok7Kmxs+Xl4n/CNjto="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/SlimFitJeans.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SlimFitJeans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kgQ3PJpA5obLhp5uG+79a4MZOWAKaHAvJyt7Wm5pVug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 21:06:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kgQ3PJpA5obLhp5uG+79a4MZOWAKaHAvJyt7Wm5pVug="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/SlimFitJeans.mypwkzb0bz.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SlimFitJeans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kgQ3PJpA5obLhp5uG+79a4MZOWAKaHAvJyt7Wm5pVug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 21:06:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mypwkzb0bz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/SlimFitJeans.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kgQ3PJpA5obLhp5uG+79a4MZOWAKaHAvJyt7Wm5pVug="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/SummerFloralDress.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SummerFloralDress.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ej5nfp2pv3fShGpSFc/OXLIEaJncUvQKYfxzcRQc578=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 22:56:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ej5nfp2pv3fShGpSFc/OXLIEaJncUvQKYfxzcRQc578="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/SummerFloralDress.yvbrtk0dou.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/SummerFloralDress.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ej5nfp2pv3fShGpSFc/OXLIEaJncUvQKYfxzcRQc578=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 22:56:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yvbrtk0dou"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/SummerFloralDress.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ej5nfp2pv3fShGpSFc/OXLIEaJncUvQKYfxzcRQc578="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/WomenTrenchCoat.65m5dijffv.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WomenTrenchCoat.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9225"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WqS/o/ZDGeA54f1dUljWcC/ATsPSavsqG1AjRsHUBSg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 22:59:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "65m5dijffv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/WomenTrenchCoat.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WqS/o/ZDGeA54f1dUljWcC/ATsPSavsqG1AjRsHUBSg="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/WomenTrenchCoat.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WomenTrenchCoat.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9225"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WqS/o/ZDGeA54f1dUljWcC/ATsPSavsqG1AjRsHUBSg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 22:59:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WqS/o/ZDGeA54f1dUljWcC/ATsPSavsqG1AjRsHUBSg="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/WoolScarf.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WoolScarf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"omojJabTR654hEOIB+pkQobem4cA5TWxC2eZV4i4ygw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 21:10:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-omojJabTR654hEOIB+pkQobem4cA5TWxC2eZV4i4ygw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/WoolScarf.qut666jnvk.jpg",
+      "AssetFile": "/home/ethar/APIPROJECT/PresentationLayer/Ecommerence.web/wwwroot/images/products/WoolScarf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"omojJabTR654hEOIB+pkQobem4cA5TWxC2eZV4i4ygw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 Jan 2026 21:10:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qut666jnvk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/WoolScarf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-omojJabTR654hEOIB+pkQobem4cA5TWxC2eZV4i4ygw="
+        }
+      ]
+    }
+  ]
 }
