@@ -1,0 +1,185 @@
+[33mcommit fcd18095d77580ee9904ca99bd8ca0b2ec350f5b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Jan 8 03:11:41 2026 +0200
+
+    this is rest Of AngularProject
+
+[33mcommit 3afe818b7c2154c8c8db29231a2596c4fe263ede[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Tue Jan 6 23:28:49 2026 +0200
+
+    PaymentModule
+
+[33mcommit 451a03cf4889a5f5858a79137aeb2b5fee8ed518[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Fri Jan 2 21:05:46 2026 +0200
+
+    RunAngularProject
+
+[33mcommit c6630f6c7f9824b03b31f75621ae74cd5835f78e[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Fri Jan 2 11:13:01 2026 +0200
+
+    Caching
+
+[33mcommit 729859241111ec63c1b8b43ee079d2782554ea69[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Fri Jan 2 07:40:49 2026 +0200
+
+    ServiceManagerWithFactoryDelegate
+
+[33mcommit 9f6e1e8a74fc99d623e0a3e7d0351dc3afa82111[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Jan 1 21:57:40 2026 +0200
+
+    Enhance SwaggerDocumentation
+
+[33mcommit 965c496ee0eaf740c1e284dbb1be298aa2b1d414[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Jan 1 11:40:45 2026 +0200
+
+    GetAllDeliveryMethods
+
+[33mcommit d90638ba04852b0b690b6d5f871852cd3b727992[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Jan 1 10:52:07 2026 +0200
+
+    OrderController
+
+[33mcommit c9c6db0c54ae9f55fe8e6407ebec69dea2dc761d[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Jan 1 10:01:09 2026 +0200
+
+    OrderMappingProfile
+
+[33mcommit 95180a3550c29ff4bf65cdc0efd656ba90b27d29[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Jan 1 09:33:51 2026 +0200
+
+    CreateOrder
+
+[33mcommit a636e52c5a2f498b5b450c556a39b03ad1863a7e[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Wed Dec 31 19:47:27 2025 +0200
+
+    OrderModuleDAL
+
+[33mcommit 9fe7708b176a7620ff2f6159fa37932d0458e11e[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Wed Dec 31 16:20:57 2025 +0200
+
+    RestOfIdentityModule
+
+[33mcommit e2586b303754d68db55137fe9a19b2e379533004[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Mon Dec 29 15:15:17 2025 +0200
+
+    Config Validate JWTBearer
+
+[33mcommit ec827e9279e2094526d1f2dee648bc5b0c9a05a1[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Mon Dec 29 13:31:31 2025 +0200
+
+    Generate Token
+
+[33mcommit 0527e9299a01fcb19cebe1364ebe7710451be2fb[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sun Dec 28 13:39:10 2025 +0200
+
+    AuthController
+
+[33mcommit bbb06c1acecd46f4999db6e0df2ff71e1e4b2d9e[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sun Dec 28 11:47:35 2025 +0200
+
+    AuthenticationService
+
+[33mcommit 7193d37b1867cda8b28d2d422029a0bd4569e4b8[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sun Dec 28 09:04:47 2025 +0200
+
+    IdentitySeeding-Module
+
+[33mcommit ce5d6d6dead0d1880293da437384657622be83de[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sat Dec 20 21:47:20 2025 +0200
+
+    Basket Module
+
+[33mcommit 81d17c90c3a9e386ceffac4199ba3e90e23f3802[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sat Dec 20 20:36:56 2025 +0200
+
+    Enhancements
+
+[33mcommit 0c99d5e33c74fbc6d3cba22d583c2914e6b83a42[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Dec 18 18:31:04 2025 +0200
+
+    NotFoundProductEndPoint
+
+[33mcommit f7c837198dea326d45601ad33a443ad3f50ff76c[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Thu Dec 18 12:42:55 2025 +0200
+
+    CustumExceptionMiddleWare
+
+[33mcommit def58f27a579a39f7b1774e8dd5578b338237d04[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sat Dec 6 05:47:26 2025 +0200
+
+    Enhancement Product
+
+[33mcommit 508fa61f3123252f4c4c8c3eb6b60ca88c86c2e3[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sat Dec 6 05:33:45 2025 +0200
+
+    InhancementPagination
+
+[33mcommit 3ee241bf6c9692a474ec9c94949e034cda4644f9[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Sat Dec 6 03:48:31 2025 +0200
+
+    Sort
+
+[33mcommit 125da078f79aae74144a3d67cbf72a46cbb0d14c[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Fri Dec 5 01:07:22 2025 +0200
+
+    Search By Product Name
+
+[33mcommit d7d3de5060e09314f647df859c2a7af75fae8035[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Fri Dec 5 00:48:34 2025 +0200
+
+    Filter By BrandId TypeId
+
+[33mcommit 64ac9badce1bc8136ab4666fe167d90aaabeaae1[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Fri Dec 5 00:25:28 2025 +0200
+
+    GetAllProductWithTypesAndBrand
+
+[33mcommit 59a4b1f00237f4e4056bb2fe758f52ba794bc52d[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Wed Dec 3 16:38:58 2025 +0200
+
+    this is task 2 APIs
+
+[33mcommit 368c9d8cfca2bb868e5f6367b41c638dc60b2c70[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Tue Nov 18 17:30:11 2025 +0200
+
+    this is end
+
+[33mcommit 96c94e7ebc87763c719a481ef2eb64e0b6e07622[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Tue Nov 18 17:28:34 2025 +0200
+
+    this is end
+
+[33mcommit 7c94b9bdb6a43fb6e61fd7779b64ff9e407372ff[m
+Author: Ethar7 <nabihethar@yahoo.com>
+Date:   Mon Nov 17 15:14:09 2025 +0200
+
+    API first Project
